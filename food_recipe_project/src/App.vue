@@ -1,16 +1,16 @@
 <template>
-  <Header/>
-  <router-View/>
+  <HeaderCont/>
+  <router-view/>
   <!-- router/index.js에서 어떤 화면을 보여줄지 결정 -->
 </template>
 
 <script>
-import Header from './components/Header.vue'
+import HeaderCont from './components/HeaderCont.vue'
 
 export default {
   name: 'App',
   components: {
-    Header
+    HeaderCont
   }
 }
 </script>

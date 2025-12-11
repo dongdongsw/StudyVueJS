@@ -1,11 +1,16 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '@/views/main/HomeView.vue'
-
-const routers=[
+import FoodDetailView from '@/views/food/FoodDetailView.vue'
+const routes=[
     {
-        path:"/",
-        name:"home",
-        component:HomeView
+        path: "/",
+        name: "home",
+        component: HomeView
+    },
+    {
+        path:"/food/detail_vue/:fno",
+        name:'food_detail',
+        component: FoodDetailView
     }
 ]
 
@@ -14,4 +19,4 @@ const router = createRouter({
     routes
 })
 
-export default router 
+export default router
